@@ -1,1 +1,3 @@
-print('oi')
+while True:
+    nome = input('digite uma letra: ')
+    

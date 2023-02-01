@@ -1,5 +1,5 @@
-nome = 'arsenio'
+nome = ['arsenio']
 
-for n, c in enumerate(nome):
-   print(n,c)
+for n in enumerate(nome):
+   print(n)
 

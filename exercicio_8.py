@@ -29,6 +29,7 @@ while True:
 
             indice = int(apagando)
             del lista[indice]
+            print('oi')
         except:
             print('indice inválido')
     else:
