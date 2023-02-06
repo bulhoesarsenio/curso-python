@@ -1,11 +1,15 @@
 from datetime import date
+
 while True:
     ativo = input('QUAL É SEU ATIVO: ')
-    if  ativo.isalnum():
-        print(ativo)
-    if ativo.isdigit():
-        ativo = input('digite SEU ATIVO EXEMPLO: TAEE11: ')
-    tipo = 0  
+    
+    if len(ativo) == 6 and not ativo.isnumeric() and not ativo.isalpha():
+        tipo = input('TIPO: ') 
+        
+    else:
+        print('ATIVO INVÁLIDO! O ATIVO DEVE TER NO MÍNIMO 5 ELEMENTOS COM LETRAS E NÚMEROS')
+        continue
+    
     preco_unitario = 0
     quantidade = 0
 
@@ -13,5 +17,5 @@ while True:
     data_atual = date.today()
 
 
-    print(f'DATA DO APORTE|  ATIVO  |  TIPO  |  PREÇO UNITÁRIO  |  QUANTIDADE  |\n{data_atual}    |  {ativo}   |  {tipo} |  {preco_unitario}               |  {quantidade}           |')
-
+    print('TA DO APDAORTE|  ATIVO  |  TIPO  |  PREÇO UNITÁRIO  |  QUANTIDADE  |         ')
+    print(f'{data_atual}       {ativo} |  {ativo}')
