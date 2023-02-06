@@ -1,11 +1,11 @@
 nome = 'Maria Helena'  
 
-indício = 0
+indicio = 0
 novo_nome = ''
-while indício < len(nome):
-    letra = nome[indício]
+while indicio < len(nome):
+    letra = nome[indicio]
     novo_nome += f'*{letra}'
-    indício += 1
+    indicio += 1
 
 novo_nome += '*'
 print(novo_nome)
