@@ -1,7 +1,12 @@
-from datetime import date
 
+from datetime import date
+preco_unitario = 0
+preco_unitario_int = 0
+quantidade_int = 0
+data_atual = date.today()
+quantidade = 0
 while True:
-    ativo = input('QUAL É SEU ATIVO: ')
+    ativo = input('QUAL É SEU ATIVO, COM 6 ELEMENTOS CONTENDO LETRAS E NÚMEROS: ')
 
     
     
@@ -14,31 +19,38 @@ while True:
                     continue
                 elif len(tipo) == 5 and tipo.isalpha():   
                     while True:
-                
-                
-                        preco_unitario = input('PREÇO UNITÁRIO')
-                        if preco_unitario.isalpha():
-                            print('DIGITE SÓ NÚMEROS')
-                            continue    
-                        if preco_unitario.isnumeric():
-                            preco_unitario_int = float(preco_unitario)
-                        
-                            while True:
-                                quantidade = input('QUANTIDADE: ')
-                                if quantidade.isnumeric():
+                        try:
+                            preco_unitario = float(input('PREÇO UNITÁRIO: '))                     
+                            break
+                            
+                                
+                        except:
+                             print('ERROR DIGITE SÓ NÚMEROS')
+                             continue
+                    preco_unitario_int = float(preco_unitario)    
+                    while True:
+                                try:
+                                    quantidade = (input('QUANTIDADE: '))
                                     quantidade_int = float(quantidade)
                                     data_atual = date.today()
-                                    valor_investido = quantidade_int * preco_unitario_int
 
-                                    
-                                    print(
-                                        'TA DO APDAORTE|  ATIVO  |  TIPO  |  PREÇO UNITÁRIO  |  QUANTIDADE  |  VALOR INVESTIDOR   |    ')
-                                    print(
-                                        f'{data_atual}       {ativo} |  {tipo}    r${preco_unitario}                  {quantidade}              r${valor_investido}')
                                     break
-                            break
+                                    
 
+                                except:
+                                        print('ERRO, DIGITE SÓ NÚMEROS')
+                                        continue
+                                    
+                    
+                                    
+                    print(
+                        'TA DO APDAORTE|  ATIVO  |  TIPO  |  PREÇO UNITÁRIO  |  QUANTIDADE  |  VALOR INVESTIDOR   |    ')
+                    print(
+                        f'{data_atual}       {ativo} |  {tipo}    r${preco_unitario}                  {quantidade}              r${quantidade_int * preco_unitario_int}')
                     break
+                #break
+
+            #break
         break
     #else:
         #print('DIGITE SÓ NÚMEROS')
@@ -47,27 +59,3 @@ while True:
         print('ATIVO INVÁLIDO! O ATIVO DEVE TER NO MÍNIMO 5 ELEMENTOS COM LETRAS E NÚMEROS')
         continue
     
-
-'''''
-tipo = input('TIPO: ')
-        if len(tipo) == 5:
-            while True:
-                preco_unitario = input('PREÇO UNITÁRIO')
-                if preco_unitario.isdigit():
-                    while True:
-
-                        quantidade = input('QUANTIDADE: ')
-                        if quantidade.isnumeric():
-
-                            data_atual = date.today()
-                            preco_unitario_int = int(preco_unitario)
-                            print(
-                                'TA DO APDAORTE|  ATIVO  |  TIPO  |  PREÇO UNITÁRIO  |  QUANTIDADE  |         ')
-                            print(
-                                f'{data_atual}       {ativo} |  {tipo}    {preco_unitario}                 {quantidade}')
-                        
-                        else:
-                            print('DIGITE SÓ LETRAS')
-                            continue
- '''           
-
