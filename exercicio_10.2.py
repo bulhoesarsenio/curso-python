@@ -16,7 +16,6 @@ validando_cpf_2 = validando_cpf + str(resultado_1)
 contador_regressivo_2 = 11
 
 calculando_2 = 0
-
 for ite in validando_cpf_2:
     calculando_2 += int(ite) * contador_regressivo_2
     contador_regressivo_2 -= 1
