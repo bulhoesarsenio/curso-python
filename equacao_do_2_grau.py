@@ -10,10 +10,9 @@ def valores(a, b, c):
        
     
     if subtracao < 0:
-        print('IMPOSSÍVEL DE CALCULAR A EQUAÇÃO, POIS A RAIZ QUADRADA É NEGATIVA ENTÃO A SOLUÇÃO É S = {} ')
+        print('IMPOSSÍVEL DE CALCULAR A EQUAÇÃO, POIS NÃO POSSUI RAIZES REAIS ENTÃO A SOLUÇÃO É S = {} ')
     elif a == 0:
        print('O VALOR (A) NÃO PODE RECEBER VALOR 0')
-
     else:
         print(f'{a}x² {b}x {c} = 0')
 
@@ -22,7 +21,7 @@ def valores(a, b, c):
           f'{b=} |'
           f'{c=} |')
         soma = potencia + expressao_numerica
-        print(f'Δ')
+        print(f'Δ = (b)² -4.a.c')
         print(f'Δ = {potencia} + {expressao_numerica}')
         print(f'Δ = {soma}')
         print('')
@@ -68,7 +67,7 @@ def valores(a, b, c):
         resultado_x2 = x_2 /divisao
         print(f'x2 = {x_2 / divisao}')
 
-
+        print('')
         print('S x1= %.2f' % resultado_x1)
         print('S x2= %.2f' % resultado_x2)
         print(Fraction(resultado_x2))
