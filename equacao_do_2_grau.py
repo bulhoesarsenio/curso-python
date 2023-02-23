@@ -68,8 +68,8 @@ def valores(a, b, c):
         print(f'x2 = {x_2 / divisao}')
 
         print('')
-        print('S x1= %.2f' % resultado_x1)
-        print('S x2= %.2f' % resultado_x2)
+        print('S x1 = %.2f' % resultado_x1)
+        print('S x2 = %.2f' % resultado_x2)
         print(Fraction(resultado_x2))
     
 while True:
