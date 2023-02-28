@@ -80,9 +80,13 @@ while True:
                 b=int(input('digite um número para (b): ')),
                 c=int(input('digite um número para (c): ')))
 
+            
         break
-         
     except:
-        
         print('NÚMERO INVÁLIDO')
-        continue
+        continue  
+        
+
+            
+   
+        

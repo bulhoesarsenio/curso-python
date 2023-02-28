@@ -11,23 +11,23 @@ while True:
 
     if len(ativo) >= 5 and not ativo.isnumeric() and not ativo.isalpha():
 
-<<<<<<< HEAD
-    if len(ativo) == 6 and not ativo.isnumeric() and not ativo.isalpha():
 
-        while True:
-            tipo = input('TIPO.DIGITE 5 ELEMENTOS COM TODOS ESSES LETRAS: ')
+        if len(ativo) == 6 and not ativo.isnumeric() and not ativo.isalpha():
 
-            if tipo.isdigit():
-                continue
-            elif len(tipo) == 5 and tipo.isalpha():
-                while True:
+            while True:
+                tipo = input('TIPO.DIGITE 5 ELEMENTOS COM TODOS ESSES LETRAS: ')
 
-                    preco_unitario = input('PREÇO UNITÁRIO')
-                    if preco_unitario.isalpha():
-                        print('DIGITE SÓ NÚMEROS')
-                        continue
-                    if preco_unitario.isdecimal():
-                        preco_unitario_int = float(preco_unitario)
+                if tipo.isdigit():
+                    continue
+                elif len(tipo) == 5 and tipo.isalpha():
+                    while True:
+
+                        preco_unitario = input('PREÇO UNITÁRIO')
+                        if preco_unitario.isalpha():
+                            print('DIGITE SÓ NÚMEROS')
+                            continue
+                        if preco_unitario.isdecimal():
+                            preco_unitario_int = float(preco_unitario)
 
                         while True:
                             quantidade = input('QUANTIDADE: ')
@@ -44,7 +44,7 @@ while True:
                         break
 
                 break
-=======
+
         while True:
             tipo = input(
                 "INFORME O TIPO DO ATIVO (AÇÕES, FII's): ")
@@ -77,42 +77,19 @@ while True:
                     'TA DO APDAORTE|  ATIVO  |  TIPO  |  PREÇO UNITÁRIO  |  QUANTIDADE  |  VALOR INVESTIDOR   |    ')
                 print(
                     f'{data_atual}       {ativo} |  {tipo}     R${preco_unitario}                 {quantidade}           R${quantidade_int * preco_unitario_int}')
-                break
-            # break
+                
+                
 
-        # break
->>>>>>> e77a3a7963910827efc141ae08aac8792423eedc
+                break
+            break
+
+        break
         break
     # else:
         # print('DIGITE SÓ NÚMEROS')
-
+   
     else:
         print('ATIVO INVÁLIDO! O ATIVO DEVE TER NO MÍNIMO 5 ELEMENTOS COM LETRAS E NÚMEROS')
-        continue
-<<<<<<< HEAD
 
 
-'''''
-tipo = input('TIPO: ')
-        if len(tipo) == 5:
-            while True:
-                preco_unitario = input('PREÇO UNITÁRIO')
-                if preco_unitario.isdigit():
-                    while True:
 
-                        quantidade = input('QUANTIDADE: ')
-                        if quantidade.isnumeric():
-
-                            data_atual = date.today()
-                            preco_unitario_int = int(preco_unitario)
-                            print(
-                                'TA DO APDAORTE|  ATIVO  |  TIPO  |  PREÇO UNITÁRIO  |  QUANTIDADE  |         ')
-                            print(
-                                f'{data_atual}       {ativo} |  {tipo}    {preco_unitario}                 {quantidade}')
-                        
-                        else:
-                            print('DIGITE SÓ LETRAS')
-                            continue
- '''
-=======
->>>>>>> e77a3a7963910827efc141ae08aac8792423eedc
