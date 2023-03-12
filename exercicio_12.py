@@ -12,12 +12,13 @@
 # def quadruplicar(numero):
 #     return numero * 4
 def funcao(numero):
-    return numero 
+    return numero * 2
+
 
 duplicar = funcao(2)
 triplicar = funcao(3)
 quadruplicar = funcao(4)
 
-print((2*duplicar))
-print(triplicar * 2)
-print(quadruplicar * 2)
+print((duplicar))
+print(triplicar)
+print(quadruplicar)
