@@ -96,7 +96,7 @@ while True:
     
 
     except (ValueError, TypeError):
-        print('tivemos um problema com os tipos de dados informados. informe um número válido'.upper())
+        print('tivemos um problema com os tipos de dados informados. informe um número inteiro válido'.upper())
     except NameError:
         print('erro isso não é um número válido'.upper()) 
     except KeyboardInterrupt:
