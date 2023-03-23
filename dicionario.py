@@ -1,24 +1,10 @@
-''''''
-dicionario = {'nome': 'mengo'}
+
+dicionario = {'nome': 'mengo', 
+              'idade': '12',
+              'altura': '1.79'}
 print(dicionario)
 print(type(dicionario))
-'''
 
-def funcao(a):
-    return a * a
-    return a + a
-
-print(funcao(a = int(input('digite um número: '))))
-'''''
-
-
-verbo = input('digite um verbo: ')
-
-lista = verbo
-
-
-iterando = verbo[-1]
-if iterando == 'r':
-    print('é um verbo')
-else:
-    print('não é um verbo')
+for c in dicionario:
+    
+    print(f'{c}:', dicionario[c])
