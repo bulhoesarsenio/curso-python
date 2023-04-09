@@ -13,6 +13,7 @@ print(valor)
 def valor(*args):
 
     for i in args:
+        print(i)
         if i % 2 == 0:
             print(i,'= par' )
         else:
