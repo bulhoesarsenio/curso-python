@@ -58,3 +58,9 @@ else:
     erro += 1
     
 print(f'você acertou {acerto} de 3')
+
+
+'''''
+for i, c in enumerate(dicionario[0]['opcoes']):
+    print(i,c)
+'''
