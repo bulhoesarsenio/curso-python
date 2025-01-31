@@ -1,3 +1,6 @@
 teste
 
 dedee
+
+d
+UnicodeEncodeErrorde
